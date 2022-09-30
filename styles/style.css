@@ -146,11 +146,6 @@
   z-index: 1;
 }
 
-.section-subtitle_theme_dark {
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
 
 .section-subtitle {
   padding: 0 20%;
@@ -159,6 +154,12 @@
   font-weight: normal;
   margin: 20px 0 0;
   text-align: center;
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .table {
@@ -170,9 +171,22 @@
   flex-wrap: wrap;
 }
 
+.table_theme_dark {
+  position: relative;
+  z-index: 1;
+}
+
 .table__cell {
   width: 250px;
   margin-top: 60px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: #fff;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
 .table__heading  {
@@ -182,6 +196,10 @@
   font-weight: 600;
 }
 
+.table__heading_theme_dark  {
+  color: #fff;
+}
+
 .table__text {
   margin: 20px 0 0;
   line-height: 1.2;
@@ -189,12 +207,8 @@
   font-weight: normal;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.table__text_theme_dark {
+  color: #fff;
 }
 
 .feynman {
@@ -228,7 +242,7 @@
   text-decoration: none;
   color:  #2f80ed;
   position: absolute;
-  top 50%;
+  top: 50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
@@ -251,4 +265,67 @@
   background:  #1f1f1f url(../images/kaufman-triangle.svg) no-repeat center / contain;
   width: 876px;
   height: 876px;
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer__column {
+  min-height: 250px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-weight: normal;
+  /* Хотя на мой взгляд следующая инструкция излишня, поскольку и без нее внешние границы у элемента
+  сверху и снизу по 18px, но в задании это строго оговорено, поэтому пусть будет */
+  margin: 18px 0;
+}
+
+.footer__heading {
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.footer__column-links {
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.footer__column-link {
+  display: block;
+}
+
+.footer__link-text {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.footer__icon-social {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
