@@ -8,17 +8,3 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
-.content {
-  display: block;
-}
-
-.description {
-  margin-top: 100px;
-}
-
-.digits {
-  margin: 100px 0;
-}
-
-

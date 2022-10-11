@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
+    <!-- <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    -->
     <link rel="stylesheet" href="./pages/index.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <meta name="description" content="проектная работа спринт 1 Андрей Сергеев на Яндекс Практикуме">
@@ -18,8 +19,8 @@
         <div class="logo logo_place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-        <a class="header__link" href="#feynman">Узнать &rarr;</a></p>
-        <div class="header__square-pic"></div>
+        <a class="header__link link-opacity" href="#techniques">Узнать &rarr;</a></p>
+        <div class="header__square-pic rotation"></div>
         <img class="header__main-illustration" src="./images/two_again.png" alt="Грустный мальчик, который получил двойку в школе.Фрагмент картины Ф.П. Решетникова 'Опять двойка'">
       </header>
       <main class="content">
@@ -35,6 +36,43 @@
               </p>
             </div>
           </div>
+        </section>
+        <section id="techniques" class="techniques">
+            <h2 class="section-title">Техники обучения</h2>
+            <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+            <ul class="cards ">
+              <li class="cards__item">
+                <img class="cards__image" src="./images/cards-attention.png" alt="Книга в руках">
+                <h3 class="cards__title">Два вида внимания</h3>
+                <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="./images/cards-recall.png" alt="Статуя задумчивого юноши">
+                <h3 class="cards__title">Recall</h3>
+                <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="./images/cards-interliving.png" alt="Большой зал музея">
+                <h3 class="cards__title">Интерливинг</h3>
+                <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="./images/cards-question.png" alt="Человек перед выбором пути">
+                <h3 class="cards__title">Вопросы</h3>
+                <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="./images/cards-competence.png" alt="Стопка учебников на ладони">
+                <h3 class="cards__title">Иллюзия компетентности</h3>
+                <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+              </li>
+            </ul>
+        </section>
+        
+        <section id="feynman" class="feynman">
+          <h2 class="feynman__title">Метод Фейнмана</h2>
+          <p class="feynman__subtitle">Выучить и не забыть.</p>
+          <a class="feynman__link link-opacity"  href="https://habr.com/ru/company/getmeit/blog/646085/" target="_blank">Подробнее &rarr;</a>
         </section>
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
@@ -75,11 +113,6 @@
               <p class="table__text">Открытие условного рефлекса</p>
             </li>
           </ul>
-        </section>
-        <section id="feynman" class="feynman">
-          <h2 class="feynman__title">Метод Фейнмана</h2>
-          <p class="feynman__subtitle">Выучить и не забыть.</p>
-          <a class="feynman__link"  href="https://habr.com/ru/company/getmeit/blog/646085/" target="_blank">Подробнее &rarr;</a>
         </section>
         <section class="kaufman">
           <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
@@ -126,7 +159,7 @@
               <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
             </li>
           </ul>
-          <div class="kaufman__triangle"></div>
+          <div class="kaufman__triangle rotation"></div>
         </section>
       </main>
       <footer class="footer">
@@ -139,13 +172,13 @@
             <h3 class="footer__heading">О Практикуме</h3>
             <ul class="footer__column-links">
               <li>
-                <a class="footer__column-link" href="https://practicum.yandex.ru" target="_blank">Главная</a>
+                <a class="footer__column-link link-opacity" href="https://practicum.yandex.ru" target="_blank">Главная</a>
               </li>
               <li>
-                <a class="footer__column-link" href="https://yandex.ru/support/praktikum/index.html" target="_blank">Концепция</a>
+                <a class="footer__column-link link-opacity" href="https://yandex.ru/support/praktikum/index.html" target="_blank">Концепция</a>
               </li>
               <li>
-                <a class="footer__column-link" href="https://yandex.ru/support/praktikum/mentors.html" target="_blank">Наставники</a>
+                <a class="footer__column-link link-opacity" href="https://yandex.ru/support/praktikum/mentors.html" target="_blank">Наставники</a>
               </li>
             </ul>
           </nav>
@@ -154,17 +187,17 @@
             <h3 class="footer__heading">Соцсети</h3>
             <ul class="footer__column-links">
               <li>
-                <a class="footer__column-link" href="https://www.youtube.com/channel/UCjaEmNS6ZOeKgVemfBikjGQ" target="_blank">
+                <a class="footer__column-link link-opacity" href="https://www.youtube.com/channel/UCjaEmNS6ZOeKgVemfBikjGQ" target="_blank">
                   <img class="footer__social-icon" src="./images/youtube-icon.svg" alt="Логотип видеохостинга Ютьюб">YouTube
                 </a>
               </li>
               <li>
-                <a class="footer__column-link" href="https://vk.com/yandex.practicum" target="_blank">
+                <a class="footer__column-link link-opacity" href="https://vk.com/yandex.practicum" target="_blank">
                   <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Логотип соцсети в ВКонтакте">ВКонтакте
                 </a>
               </li>
               <li>
-                <a class="footer__column-link" href="https://www.tiktok.com/discover/%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC" target="_blank">
+                <a class="footer__column-link link-opacity" href="https://www.tiktok.com/discover/%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC" target="_blank">
                   <img class="footer__social-icon" src="./images/tiktok-icon.svg" alt="Логотип соцсети ТикТок">TikTok
                 </a>
               </li>
