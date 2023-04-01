@@ -36,4 +36,4 @@
 </details>
 
 ## Ссылка на сайт:
-https://pir0mant.github.io/how-to-learn/at
+https://pir0mant.github.io/how-to-learn/
